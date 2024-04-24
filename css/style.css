@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+
+.menu-primary {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 3rem 4rem;
+}
+
+.cart-container {
+    display: flex;
+
+    .cart-details {
+        display: inline-grid;
+        margin-right: 12px;
+    }
+}
+
+.search {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    padding: 6px;
+    width: 28rem;
+}
+
+.menu-secondary {
+  width: 100%;
+  height: 4rem;
+  background-color: #333333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  ul {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    
+    li {
+        cursor: pointer;
+    }
+  }
+}
+
+.button {
+    background-color: #00B207;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
