@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OrganicFit</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/productCard.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/loginAndRegister.css" />
     <script src="scripts/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,18 +16,18 @@
   </head>
   <body>
     <div class="menu-primary">
-      <img src="./images/icons/Logo.png" alt="OrganicFit" />
+      <img src="../images/icons/Logo.png" alt="OrganicFit" />
       <div>
         <input class="search" placeholder="Search" />
         <button class="button">Search</button>
       </div>
       <div class="cart-container">
-        <img src="./images/icons/Cart.png" alt="Cart" />
+        <img src="../images/icons/Cart.png" alt="Cart" />
         <div class="cart-details">
           <span>Shopping Cart</span>
           <span>$57.00</span>
         </div>
-        <button href="pages/login.html" class="button">Login</button>
+        <button class="button">Login</button>
       </div>
     </div>
     <div class="menu-secondary">
@@ -38,6 +38,17 @@
         <li>Contact Us</li>
       </ul>
     </div>
-    <div id="home-products" class="home-products"></div>
+    <div class="login-container">
+      <div class="login-content">
+        <h1>Sign In</h1>
+        <div class="input-container">
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+        </div>
+        <p>Forgot password</p>
+        <button class="button login-button">Login</button>
+        <p>Don't have account? <a>Register</a></p>
+      </div>
+    </div>
   </body>
 </html>
