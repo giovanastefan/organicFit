@@ -62,3 +62,9 @@
     padding: 8px;
     cursor: pointer;
 }
+
+.home-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
