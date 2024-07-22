@@ -74,3 +74,25 @@
     width: 100%;
     align-items: center;
 }
+
+.orders-table {
+    margin-top: 30px;
+}
+.orders-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.orders-table table, .orders-table th, .orders-table td {
+    border: 1px solid #ddd;
+}
+.orders-table th, .orders-table td {
+    padding: 15px;
+    text-align: left;
+}
+.orders-table th {
+    background-color: #f2f2f2;
+}
+.details {
+    color: green;
+    text-decoration: none;
+}
