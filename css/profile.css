@@ -1,0 +1,76 @@
+.account-container {
+    display: flex;
+    justify-content: center;
+}
+
+.account-content {
+    margin: 1rem;
+    padding: 1rem 0 1rem 0;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    border-radius: 0.5rem;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.account-title {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+    width: 100%;
+    align-items: center;
+}
+
+.account-title h2 {
+    margin-left: 1rem;
+}
+
+.form-row {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    align-items: left;
+}
+
+.input-content {
+    width: 60%;
+    height: 60%;
+    padding: 10px;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+
+    input {
+        border-color: rgba(0, 0, 0, 0.185);
+        border-radius: 4px;
+    }
+}
+
+.save-changes-button {
+    border-radius: 2rem;
+}
+
+.orders-container {
+    display: flex;
+    justify-content: center;
+}
+
+.orders-content {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    border-radius: 0.5rem;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.account-title {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+    width: 100%;
+    align-items: center;
+}
