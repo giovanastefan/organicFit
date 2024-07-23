@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OrganicFit</title>
+    <title>OrganicFit Shop</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../css/loginAndRegister.css" />
-    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/shop.css" />
+    <script src="../scripts/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body onload="onLoadCategories()">
     <div class="menu-primary">
       <img src="../images/icons/Logo.png" alt="OrganicFit" />
       <div>
@@ -27,7 +27,9 @@
           <span>Shopping Cart</span>
           <span>$57.00</span>
         </div>
-        <button class="button"><a href="login.html">Login or Sign Up</a></button>
+        <button class="button">
+          <a href="login.html">Login or Sign Up</a>
+        </button>
       </div>
     </div>
     <div class="menu-secondary">
@@ -37,16 +39,16 @@
         <li><a href="../pages/aboutUs.html">About Us</a></li>
       </ul>
     </div>
-    <div class="login-container">
-      <div class="login-content">
-        <h1>Sign In</h1>
-        <div class="input-container">
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-        </div>
-        <p>Forgot password</p>
-        <button class="button login-button">Login</button>
-        <p>Don't have account? <a>Register</a></p>
+    <div class="shop-container">
+      <div class="dropdown-container">
+        <select id="category">
+          <option value="" disabled selected>Select Category <img src="../images/icons/ChevronDown.png" /></option>
+        </select>
+        <select id="price">
+          <option value="" disabled selected>Order by Price</option>
+          <option value="low">Low to high</option>
+          <option value="high">High to low</option>
+        </select>
       </div>
     </div>
   </body>

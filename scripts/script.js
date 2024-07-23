@@ -41,6 +41,30 @@ const products = [
   },
 ];
 
+const categories = [
+  {
+    id: 1,
+    name: 'Vegetables'
+  },
+  {
+    id: 2,
+    name: 'Fruits'
+  },
+  {
+    id: 3,
+    name: 'Dairy Products'
+  },
+  {
+    id: 4,
+    name: 'Beverages'
+  },
+  {
+    id: 5,
+    name: 'Herbs and Spices'
+  },
+];
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const productsContainer = document.getElementById("home-products");
 
@@ -90,3 +114,15 @@ function createProductCards(products, container) {
 
   return container;
 }
+
+function onLoadCategories() {
+  const select = document.getElementById('category');
+
+  categories.forEach((category) => {
+    const option = document.createElement('option');
+    option.value = category.id;
+    option.textContent = category.name;
+    select.appendChild(option);
+  });
+}
+

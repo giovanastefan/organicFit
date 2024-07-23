@@ -1,0 +1,23 @@
+.shop-container {
+    margin: 1rem;
+}
+
+.dropdown-container {
+    display: flex;
+    gap: 10px;
+}
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    width: 15%;
+}
+select:hover {
+    border-color: #888;
+}
+select:focus {
+    border-color: #555;
+}
