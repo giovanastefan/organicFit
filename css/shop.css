@@ -13,7 +13,7 @@ select {
     background-color: #fff;
     cursor: pointer;
     outline: none;
-    width: 15%;
+    width: 30%;
 }
 select:hover {
     border-color: #888;
