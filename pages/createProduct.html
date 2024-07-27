@@ -1,82 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OrganicFit</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" href="../css/createProduct.css" />
     <script src="../scripts/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="menu-primary">
-        <img src="../images/icons/Logo.png" alt="OrganicFit" />
-        <div>
-            <input class="search" placeholder="Search" />
-            <button class="button">Search</button>
+      <img src="../images/icons/Logo.png" alt="OrganicFit" />
+      <div>
+        <input class="search" placeholder="Search" />
+        <button class="button">Search</button>
+      </div>
+      <div class="cart-container">
+        <a href="../pages/cart.html">
+          <img src="../images/icons/Cart.png" alt="Cart" />
+        </a>
+        <div class="cart-details">
+          <span>Shopping Cart</span>
+          <span>$57.00</span>
         </div>
-        <div class="cart-container">
-            <img src="../images/icons/Cart.png" alt="Cart" />
-            <div class="cart-details">
-                <span>Shopping Cart</span>
-                <span>$57.00</span>
-            </div>
-        </div>
+      </div>
     </div>
     <div class="menu-secondary">
-        <ul>
-            <li>Home</li>
-            <li>Shop</li>
-            <li>About Us</li>
-        </ul>
+      <ul>
+        <li>Home</li>
+        <li>Shop</li>
+        <li>About Us</li>
+      </ul>
     </div>
     <div class="product-container">
-        <div class="product-content">
-            <h1>Create a new product</h1>
-            <div class="input-content">
-                <div class="form">
-                    <label>Name</label>
-                    <input type="text">
-                </div>
-                <div class="form">
-                    <label>Description</label>
-                    <textarea rows="5"></textarea>
-                </div>
-                <div class="price-container">
-                    <div class="form">
-                        <label>Preço original</label>
-                        <input type="text">
-                    </div>
-                    <div class="form" id="promotional-price">
-                        <label>Preço Promocional</label>
-                        <input type="text">
-                    </div>
-                </div>
-                <div class="price-container">
-                    <div class="form">
-                        <label>Category</label>
-                        <select id="category">
-                            <option value="" disabled selected>Select<img src="../images/icons/ChevronDown.png" />
-                            </option>
-                        </select>
-                    </div>
-                    <div class="form">
-                        <label>Imagem URL</label>
-                        <input type="text">
-                    </div>
-                </div>
-                <div class="button-container">
-                    <button class="button create-button">Create Product</button>
-                </div>                
+      <div class="product-content">
+        <h1>Create a new product</h1>
+        <div class="input-content">
+          <div class="form">
+            <label>Name</label>
+            <input type="text" />
+          </div>
+          <div class="form">
+            <label>Description</label>
+            <textarea rows="5"></textarea>
+          </div>
+          <div class="price-container">
+            <div class="form">
+              <label>Original Price</label>
+              <input type="text" />
             </div>
-
+            <div class="form" id="promotional-price">
+              <label>Promotional Price</label>
+              <input type="text" />
+            </div>
+          </div>
+          <div class="price-container">
+            <div class="form">
+              <label>Category</label>
+              <select id="category">
+                <option value="" disabled selected>
+                  Select<img src="../images/icons/ChevronDown.png" />
+                </option>
+              </select>
+            </div>
+            <div class="form">
+              <label>Imagem URL</label>
+              <input type="text" />
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="button create-button">Create Product</button>
+          </div>
         </div>
-
-
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OrganicFit About Us</title>
+    <title>OrganicFit Cart</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/cart.css" />
     <script src="scripts/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +22,9 @@
         <button class="button">Search</button>
       </div>
       <div class="cart-container">
-        <img src="../images/icons/Cart.png" alt="Cart" />
+        <a href="../pages/cart.html">
+          <img src="../images/icons/Cart.png" alt="Cart" />
+        </a>
         <div class="cart-details">
           <span>Shopping Cart</span>
           <span>$57.00</span>
@@ -37,6 +40,73 @@
         <li><a href="../pages/shop.html">Shop</a></li>
         <li><a href="../pages/aboutUs.html">About Us</a></li>
       </ul>
+    </div>
+    <h2 class="center">My Shopping Cart</h2>
+    <div class="cart-page-container center">
+      <div class="cart-details container-border">
+        <table class="cart-table">
+          <thead class="cart-info">
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Product">
+                <img src="https://cdn.awsli.com.br/600x450/1304/1304130/produto/50538831/0792430fe7.jpg" alt="Green Capsicum" />
+                Green Capsicum
+              </td>
+              <td data-label="Price">$14.00</td>
+              <td data-label="Quantity">
+                <div class="container-border quantity-input">
+                  <button>-</button>
+                  <input type="text" value="5" readonly />
+                  <button>+</button>
+                </div>
+              </td>
+              <td data-label="Subtotal">$70.00</td>
+            </tr>
+            <tr>
+              <td data-label="Product">
+                <img src="https://revistacampoenegocios.com.br/wp-content/uploads/2020/05/shutterstock_120016855.jpg" alt="Red Capsicum" />
+                Red Capsicum
+              </td>
+              <td data-label="Price">$14.00</td>
+              <td data-label="Quantity">
+                <div class="container-border quantity-input">
+                  <button>-</button>
+                  <input type="text" value="1" readonly />
+                  <button>+</button>
+                </div>
+              </td>
+              <td data-label="Subtotal">$14.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="cart-details-footer">
+          <button class="btn">Return to shop</button>
+          <button class="btn">Update Cart</button>
+        </div>
+      </div>
+      <div class="cart-total container-border">
+        <h2>Cart Total</h2>
+        <div class="total-item">
+          <span>Subtotal:</span>
+          <span>$84.00</span>
+        </div>
+        <div class="total-item">
+          <span>Shipping:</span>
+          <span>Free</span>
+        </div>
+        <div class="total-item">
+          <span>Total:</span>
+          <span>$84.00</span>
+        </div>
+        <a href="billingInformation.html"><button class="btn">Proceed to checkout</button></a>
+      </div>
     </div>
   </body>
 </html>
