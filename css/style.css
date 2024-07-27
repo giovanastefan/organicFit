@@ -4,6 +4,18 @@
     font-family: "Poppins", sans-serif;
 }
 
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-border {
+  border: 1px solid #e6e6e6;
+  border-radius: 0.5rem;
+}
+
 .menu-primary {
   width: 100%;
   height: 4rem;
@@ -16,6 +28,13 @@
 
 .cart-container {
     display: flex;
+    align-items: center;
+
+    img {
+      width: 32px;
+      height: 32px;
+      padding-right: 8px;
+    }
 
     .cart-details {
         display: inline-grid;
