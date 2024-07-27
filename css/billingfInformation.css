@@ -1,0 +1,31 @@
+.billing-order-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.billing-container {
+    width: 60%;
+    margin-right: 5%;
+}
+
+.billing-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-container {
+    border: 1px solid black;
+}
+
+.form-aligned {
+    display: flex;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
