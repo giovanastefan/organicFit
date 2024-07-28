@@ -74,6 +74,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function createProductCards(products, container) {
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+  const modalName = document.getElementById("modal-name");
+  const modalPrice = document.getElementById("modal-price");
+  const modalDescription = document.getElementById("modal-description");
+  const closeButton = document.querySelector(".close-button");
+
+  closeButton.onclick = function() {
+    modal.style.display = "none";
+  };
+
+  window.onclick = function(event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  };
+
   products.forEach((product) => {
     const card = document.createElement("div");
     card.classList.add("card-container");
@@ -108,6 +125,14 @@ function createProductCards(products, container) {
     cartIcon.src = "./images/icons/Cart.png";
     cartIcon.alt = "Cart";
     button.appendChild(cartIcon);
+
+    card.onclick = function() {
+      modal.style.display = "flex";
+      modalImg.src = product.imageUrl;
+      modalName.textContent = product.name;
+      modalPrice.textContent = `$ ${product.price}`;
+      modalDescription.textContent = product.description;
+    };
 
     container.appendChild(card);
   });
