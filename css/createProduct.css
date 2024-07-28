@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    flex-wrap: wrap;
 }
 
 .product-content {
@@ -30,33 +30,30 @@ h1 {
     padding-top: 15px;
 }
 
-
-
-.form{
+.form {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-bottom: 10px;
     border-radius: 6px;
-
-    input { 
-        padding: 5px;
-    }
-
-    textarea {        
-        resize: none;
-    }
 }
 
-.price-container{
+.form input { 
+    padding: 5px;
+}
+
+.form textarea {        
+    resize: none;
+}
+
+.price-container {
     display: flex;
     justify-content: space-between;
-
-    input {
-        width: 95%;
-    }
 }
 
+.price-container input {
+    width: 95%;
+}
 
 select {
     width: 95%;
@@ -76,3 +73,61 @@ select {
     padding: 12px;
 }
 
+@media (max-width: 1200px) {
+    .product-content {
+        width: 70%;
+    }
+}
+
+@media (max-width: 992px) {
+    .product-content {
+        width: 80%;
+    }
+    
+    h1 {
+        font-size: 22px;
+    }
+    
+    .create-button {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-content {
+        width: 90%;
+    }
+
+    .price-container {
+        flex-direction: column;
+    }
+
+    .price-container input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .create-button {
+        width: 40%;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-content {
+        width: 100%;
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .create-button {
+        width: 50%;
+    }
+}
