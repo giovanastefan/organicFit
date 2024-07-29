@@ -45,14 +45,34 @@
       <div id="modal" class="modal">
         <div class="modal-content">
           <span class="close-button">&times;</span>
-          <img class="modal-image" id="modal-img" src="" alt="Product Image">
-          <div class="modal-details">
-            <p id="modal-name" class="name"></p>
-            <p id="modal-price" class="price"></p>
-            <p id="modal-description"></p>
+          <img
+            class="product-image"
+            id="modal-img"
+            src=""
+            alt="Product Image"
+          />
+          <div>
+            <h1 id="modal-name" class="product-title">Chinese Cabbage</h1>
+            <del id="modal-promotional-price" class="product-price"></del
+            ><span id="modal-price" class="product-promotional-price"></span>
+            <p id="modal-description" class="product-description"></p>
+            <div class="divider"></div>
+            <div class="container-add-to-cart">
+              <div class="container-border quantity-input">
+                <button>-</button>
+                <input type="text" value="5" readonly />
+                <button>+</button>
+              </div>
+              <button class="btn cart-button">
+                <span>Add to Cart</span><img src="images/icons/Rectangle.png" />
+              </button>
+            </div>
+            <div class="divider"></div>
+            <span>Category: </span
+            ><span id="modal-category" class="product-category"></span>
           </div>
         </div>
-      </div>      
+      </div>
     </div>
   </body>
 </html>
