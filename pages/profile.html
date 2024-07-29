@@ -16,12 +16,12 @@
 
   <body>
     <div class="menu-primary">
-      <img src="../images/icons/Logo.png" alt="OrganicFit" />
+      <img src="../images/icons/Logo.png" class="logo" alt="OrganicFit" />
       <div class="search-container">
         <input class="search" placeholder="Search" />
         <button class="button">Search</button>
       </div>
-      <div class="card-container">
+      <div class="cart-container">
         <a href="../pages/cart.html">
           <img src="../images/icons/Cart.png" alt="Cart" />
         </a>
@@ -29,14 +29,16 @@
           <span>Shopping Cart</span>
           <span>$57.00</span>
         </div>
+        <a href="../pages/profile.html">
+          <img src="../images/icons/Profile.png" alt="Profile" />
+        </a>
       </div>
     </div>
     <div class="menu-secondary">
       <ul>
-        <li>Home</li>
-        <li>Shop</li>
-        <li>About Us</li>
-        <li>Contact Us</li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/shop.html">Shop</a></li>
+        <li><a href="../pages/aboutUs.html">About Us</a></li>
       </ul>
     </div>
     <div class="account-container">
@@ -64,7 +66,10 @@
             <input type="text" placeholder="Phone" />
           </div>
         </div>
-        <button class="button save-changes-button">Save Changes</button>
+        <div style="display: flex;">
+          <button class="btn"><a href="createProduct.html" style="color: white;">Create a new product</a></button>
+          <button class="btn save-changes-button">Save Changes</button>
+        </div>
       </div>
     </div>
     <div class="orders-container">
@@ -112,7 +117,14 @@
     </div>
     <div class="footer">
       <footer>
-        <img src="../images/icons/Logo-white.png" width="198px" height="40px" class="logo" id="footer-logo" alt="OrganicFit" />
+        <img
+          src="../images/icons/Logo-white.png"
+          width="198px"
+          height="40px"
+          class="logo"
+          id="footer-logo"
+          alt="OrganicFit"
+        />
         <span class="footer-text">Natural Organics. All rights reserved.</span>
         <span class="footer-text">2024</span>
       </footer>

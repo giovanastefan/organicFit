@@ -1,142 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-" />
     <title>OrganicFit</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../css/billingfInformation.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../css/billingfInformation.css"
+    />
     <script src="../scripts/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-</head>
-
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="menu-primary">
-        <img src="../images/icons/Logo.png" alt="OrganicFit" />
-        <div class="search-container">
-            <input class="search" placeholder="Search" />
-            <button class="button">Search</button>
+      <img src="../images/icons/Logo.png" alt="OrganicFit" />
+      <div class="search-container">
+        <input class="search" placeholder="Search" />
+        <button class="button">Search</button>
+      </div>
+      <div class="cart-container">
+        <a href="../pages/cart.html">
+          <img src="../images/icons/Cart.png" alt="Cart" />
+        </a>
+        <div class="cart-details">
+          <span>Shopping Cart</span>
+          <span>$57.00</span>
         </div>
-        <div class="cart-container">
-            <a href="../pages/cart.html">
-                <img src="../images/icons/Cart.png" alt="Cart" />
-            </a>
-            <div class="cart-details">
-                <span>Shopping Cart</span>
-                <span>$57.00</span>
-            </div>
-        </div>
+        <button class="button">
+          <a href="login.html">Login or Sign Up</a>
+        </button>
+      </div>
     </div>
     <div class="menu-secondary">
-        <ul>
-            <li>Home</li>
-            <li>Shop</li>
-            <li>About</li>
-        </ul>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/shop.html">Shop</a></li>
+        <li><a href="../pages/aboutUs.html">About Us</a></li>
+      </ul>
     </div>
     <div class="container">
-        <div class="billing-container">
-            <div class="title">
-                <h3>Billing Information</h3>
-            </div>
-            <div class="billing-content">
-                <div class="form-aligned" id="form-names">
-                    <div class="form" id="first-name">
-                        <span>First name</span>
-                        <input type="text" placeholder="Your first name" />
-                    </div>
-                    <div class="form" id="last-name">
-                        <span>Last name</span>
-                        <input type="text" placeholder="Your last name" />
-                    </div>
-                    <div class="form" id="company-name">
-                        <span>Company Name (optional)</span>
-                        <input type="text" placeholder="Company Name" />
-                    </div>
-                </div>
-                <div class="form">
-                    <span>Street Address</span>
-                    <input type="text" Placeholder="Address">
-                </div>
-                <div class="form-aligned">
-                    <div class="country-region">
-                        <div class="form">
-                            <span>Country/Region</span>
-                            <select id="country-region">
-                                <option value="" disabled selected>Select<img src="../images/icons/ChevronDown.png" />
-                                </option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="state">
-                        <div class="form">
-                            <span>State</span>
-                            <select id="state">
-                                <option value="" disabled selected>Select<img src="../images/icons/ChevronDown.png" />
-                                </option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-aligned" id="email-phone">
-                    <div class="form" id="form-email">
-                        <span>E-mail</span>
-                        <input type="email" placeholder="E-mail" />
-                    </div>
-                    <div class="form" id="form-phone">
-                        <span>Phone</span>
-                        <input type="tel" placeholder="Phone" />
-                    </div>
-                </div>
-                <div class="ship-checkbox">
-                    <input type="checkbox" id="ship-different">
-                    <label for="ship-different">Ship to a different Address</label>
-                </div>
-            </div>
-            <div class="aditional-info">
-                <h3>Aditional Info</h3>
-                <span>Order Notes (Optional)</span>
-                <textarea rows="5" class="textarea-aditional"></textarea>
-            </div>
+      <div class="billing-container">
+        <div class="title">
+          <h3>Billing Information</h3>
         </div>
-        <div class="order-container">
-            <div class="title">
-                <h3>Order Sumary</h3>
+        <div class="billing-content">
+          <div class="form-aligned" id="form-names">
+            <div class="form" id="first-name">
+              <span>First name</span>
+              <input type="text" placeholder="Your first name" />
             </div>
-            <div class="order-content">
-                <div class="order-products">
-                    <section id="products-order"></section>
-                </div>
-                <div class="payment-method">
-                    <h3>Payment Method</h3>
-                    <label for="cash">
-                        <input type="radio" id="cash" name="payment" value="cash">
-                        Cash on Delivery
-                    </label>
-                    <label for="paypal">
-                        <input type="radio" id="paypal" name="payment" value="paypal">
-                        Paypal
-                    </label>
-                    <label for="amazon-pay">
-                        <input type="radio" id="amazon-pay" name="payment" value="amazon">
-                        Amazon Pay
-                    </label>
-                </div>
-                <div class="button-container">
-                    <button class="button button-place">Place Order</button>
-                </div>
-
+            <div class="form" id="last-name">
+              <span>Last name</span>
+              <input type="text" placeholder="Your last name" />
             </div>
+            <div class="form" id="company-name">
+              <span>Company Name (optional)</span>
+              <input type="text" placeholder="Company Name" />
+            </div>
+          </div>
+          <div class="form">
+            <span>Street Address</span>
+            <input type="text" placeholder="Address" />
+          </div>
+          <div class="form-aligned">
+            <div class="country-region">
+              <div class="form">
+                <span>Country/Region</span>
+                <select id="country-region">
+                  <option value="" disabled selected>
+                    Select<img src="../images/icons/ChevronDown.png" />
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="state">
+              <div class="form">
+                <span>State</span>
+                <select id="state">
+                  <option value="" disabled selected>
+                    Select<img src="../images/icons/ChevronDown.png" />
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-aligned" id="email-phone">
+            <div class="form" id="form-email">
+              <span>E-mail</span>
+              <input type="email" placeholder="E-mail" />
+            </div>
+            <div class="form" id="form-phone">
+              <span>Phone</span>
+              <input type="tel" placeholder="Phone" />
+            </div>
+          </div>
+          <div class="ship-checkbox">
+            <input type="checkbox" id="ship-different" />
+            <label for="ship-different">Ship to a different Address</label>
+          </div>
         </div>
+        <div class="aditional-info">
+          <h3>Aditional Info</h3>
+          <span>Order Notes (Optional)</span>
+          <textarea rows="5" class="textarea-aditional"></textarea>
+        </div>
+      </div>
+      <div class="order-container">
+        <div class="title">
+          <h3>Order Sumary</h3>
+        </div>
+        <div class="order-content">
+          <div class="order-products">
+            <section id="products-order"></section>
+          </div>
+          <div class="payment-method">
+            <h3>Payment Method</h3>
+            <label for="cash">
+              <input type="radio" id="cash" name="payment" value="cash" />
+              Cash on Delivery
+            </label>
+            <label for="paypal">
+              <input type="radio" id="paypal" name="payment" value="paypal" />
+              Paypal
+            </label>
+            <label for="amazon-pay">
+              <input
+                type="radio"
+                id="amazon-pay"
+                name="payment"
+                value="amazon"
+              />
+              Amazon Pay
+            </label>
+          </div>
+          <div class="button-container">
+            <button class="button button-place">Place Order</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="footer">
-        <footer>
-          <img src="../images/icons/Logo-white.png" width="198px" height="40px" class="logo" id="footer-logo" alt="OrganicFit" />
-          <span class="footer-text">Natural Organics. All rights reserved.</span>
-          <span class="footer-text">2024</span>
-        </footer>
-      </div>
-</body>
+      <footer>
+        <img
+          src="../images/icons/Logo-white.png"
+          width="198px"
+          height="40px"
+          class="logo"
+          id="footer-logo"
+          alt="OrganicFit"
+        />
+        <span class="footer-text">Natural Organics. All rights reserved.</span>
+        <span class="footer-text">2024</span>
+      </footer>
+    </div>
+  </body>
 </html>

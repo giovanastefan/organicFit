@@ -5,6 +5,11 @@
 }
 
 /*Generic styles*/
+
+a {
+  text-decoration: none;
+}
+
 .center {
   width: 100%;
   display: flex;
