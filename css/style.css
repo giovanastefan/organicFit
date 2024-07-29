@@ -88,6 +88,24 @@
   display: none;
 }
 
+footer {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  background-color: black;
+  color: white;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  padding-top: 20px ;
+
+  img, span {
+    margin-left: 100px;
+  }
+}
+
+
+
 @media (max-width: 768px) {
   .menu-primary {
     flex-direction: column;
@@ -128,6 +146,10 @@
     padding: 0.5rem 1rem;
     text-align: left;
   }
+
+  footer {
+    height: 10%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -156,6 +178,10 @@
   .menu-secondary li {
     text-align: center;
     padding: 0.5rem 0;
+  }
+
+  footer {
+    height: 13%;
   }
 }
 
