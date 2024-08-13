@@ -8,7 +8,7 @@
   padding: 1rem 0 1rem 0;
   border: 1px solid rgba(0, 0, 0, 0.185);
   border-radius: 0.5rem;
-  width: 40%;
+  width: 50%;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -61,7 +61,7 @@
   padding: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.185);
   border-radius: 0.5rem;
-  width: 40%;
+  width: 50%;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -75,27 +75,87 @@
   align-items: center;
 }
 
-.orders-table {
-  margin-top: 30px;
-}
 .orders-table table {
   width: 100%;
   border-collapse: collapse;
 }
-.orders-table table,
-.orders-table th,
-.orders-table td {
-  border: 1px solid #ddd;
-}
-.orders-table th,
-.orders-table td {
-  padding: 15px;
+
+.orders-table th, .orders-table td {
+  padding: 10px;
   text-align: left;
 }
+
 .orders-table th {
   background-color: #f2f2f2;
 }
+
 .details {
   color: green;
-  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .account-content {
+    width: 80%; 
+    padding: 0.5rem; 
+  }
+
+  .form-row {
+    flex-direction: column; 
+    width: 100%; 
+  }
+
+  .input-content {
+    width: 100%; 
+    padding: 0.5rem; 
+  }
+
+  .input-content input {
+    width: 100%; 
+  }
+
+  .save-changes-button {
+    margin: 0; 
+    width: 100%; 
+  }
+
+  .orders-content {
+    width: 80%; 
+    padding: 0.5rem;
+  }
+
+  .orders-table table {
+    display: block; 
+    overflow-x: auto; 
+    white-space: nowrap; 
+  }
+
+  .orders-table th, .orders-table td {
+    padding: 8px; 
+    font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .account-content {
+    width: 100%; 
+    padding: 0.5rem; 
+  }
+
+  .input-content {
+    padding: 0.3rem; 
+  }
+
+  .input-content input {
+    font-size: 0.9rem; 
+  }
+
+  .orders-content {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .orders-table th, .orders-table td {
+    padding: 6px; 
+    font-size: 0.8rem; 
+  }
 }

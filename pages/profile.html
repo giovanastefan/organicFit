@@ -1,170 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OrganicFit Profile</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../css/profile.css" />
-    <script src="scripts/script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="menu-primary">
-      <img src="../images/icons/Logo.png" class="logo" alt="OrganicFit" />
-      <div class="search-container">
-        <input class="search" placeholder="Search" />
-        <button class="button">Search</button>
-      </div>
-      <div class="cart-container">
-        <a href="cart.html">
-          <img src="../images/icons/Cart.png" alt="Cart" />
-        </a>
-        <div class="cart-details">
-          <span>Shopping Cart</span>
-          <span>$57.00</span>
-        </div>
-        <button class="button">
-          <a href="login.html">Login or Sign Up</a>
-        </button>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OrganicFit Profile</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/profile.css" />
+  <script src="scripts/script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="menu-primary">
+    <img src="../images/icons/Logo.png" class="logo" alt="OrganicFit" />
+    <div class="search-container">
+      <input class="search" placeholder="Search" />
+      <button class="button">Search</button>
     </div>
-    <div class="menu-secondary">
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../pages/shop.html">Shop</a></li>
-        <li><a href="../pages/aboutUs.html">About Us</a></li>
-      </ul>
+    <div class="cart-container">
+      <a href="cart.html">
+        <img src="../images/icons/Cart.png" alt="Cart" />
+      </a>
+      <div class="cart-details">
+        <span>Shopping Cart</span>
+        <span>$57.00</span>
+      </div>
+      <button class="button">
+        <a href="login.html">Login or Sign Up</a>
+      </button>
     </div>
-    <div id="home-products" class="home-products">
-      <div id="modal" class="modal">
-        <div class="modal-content">
-          <span class="close-button">&times;</span>
-          <img
-            class="product-image"
-            id="modal-img"
-            src=""
-            alt="Product Image"
-          />
-          <div>
-            <h1 id="modal-name" class="product-title">Chinese Cabbage</h1>
-            <del id="modal-promotional-price" class="product-price"></del
-            ><span id="modal-price" class="product-promotional-price"></span>
-            <p id="modal-description" class="product-description"></p>
-            <div class="divider"></div>
-            <div class="container-add-to-cart">
-              <div class="container-border quantity-input">
-                <button>-</button>
-                <input type="text" value="5" readonly />
-                <button>+</button>
-              </div>
-              <button class="btn cart-button">
-                <span>Add to Cart</span><img src="images/icons/Rectangle.png" />
-              </button>
+  </div>
+  <div class="menu-secondary">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../pages/shop.html">Shop</a></li>
+      <li><a href="../pages/aboutUs.html">About Us</a></li>
+    </ul>
+  </div>
+  <div id="home-products" class="home-products">
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <img class="product-image" id="modal-img" src="" alt="Product Image" />
+        <div>
+          <h1 id="modal-name" class="product-title">Chinese Cabbage</h1>
+          <del id="modal-promotional-price" class="product-price"></del><span id="modal-price"
+            class="product-promotional-price"></span>
+          <p id="modal-description" class="product-description"></p>
+          <div class="divider"></div>
+          <div class="container-add-to-cart">
+            <div class="container-border quantity-input">
+              <button>-</button>
+              <input type="text" value="5" readonly />
+              <button>+</button>
             </div>
-            <div class="divider"></div>
-            <span>Category: </span
-            ><span id="modal-category" class="product-category"></span>
+            <button class="btn cart-button">
+              <span>Add to Cart</span><img src="images/icons/Rectangle.png" />
+            </button>
           </div>
+          <div class="divider"></div>
+          <span>Category: </span><span id="modal-category" class="product-category"></span>
         </div>
       </div>
     </div>
-    <div class="account-container">
-      <div class="account-content">
-        <div class="account-title">
-          <h2>Account Settings</h2>
+  </div>
+  <div class="account-container">
+    <div class="account-content">
+      <div class="account-title">
+        <h2>Account Settings</h2>
+      </div>
+      <div class="form-row">
+        <div class="input-content">
+          <span>First Name</span>
+          <input type="text" placeholder="Name" />
         </div>
-        <div class="form-row">
-          <div class="input-content">
-            <span>First Name</span>
-            <input type="text" placeholder="Name" />
-          </div>
-          <div class="input-content">
-            <span>Last Name</span>
-            <input type="text" placeholder="Name" />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="input-content">
-            <span>E-mail</span>
-            <input type="email" placeholder="Email" />
-          </div>
-          <div class="input-content">
-            <span>Phone Number</span>
-            <input type="text" placeholder="Phone" />
-          </div>
-        </div>
-        <div style="display: flex">
-          <button class="btn">
-            <a href="createProduct.html" style="color: white"
-              >Create a new product</a
-            >
-          </button>
-          <button class="btn save-changes-button">Save Changes</button>
+        <div class="input-content">
+          <span>Last Name</span>
+          <input type="text" placeholder="Name" />
         </div>
       </div>
-    </div>
-    <div class="orders-container">
-      <div class="orders-content">
-        <div class="orders-title">
-          <h2>Recent Order History</h2>
+      <div class="form-row">
+        <div class="input-content">
+          <span>E-mail</span>
+          <input type="email" placeholder="Email" />
         </div>
-        <div class="orders-table">
-          <table>
-            <thead>
-              <tr>
-                <th>ORDER ID</th>
-                <th>DATE</th>
-                <th>TOTAL</th>
-                <th>STATUS</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>#738</td>
-                <td>8 Sep, 2024</td>
-                <td>$135 (5 products)</td>
-                <td>Processing</td>
-                <td class="details">View Details</td>
-              </tr>
-              <tr>
-                <td>#738</td>
-                <td>8 Sep, 2024</td>
-                <td>$135 (5 products)</td>
-                <td>Processing</td>
-                <td class="details">View Details</td>
-              </tr>
-              <tr>
-                <td>#738</td>
-                <td>8 Sep, 2024</td>
-                <td>$135 (5 products)</td>
-                <td>Processing</td>
-                <td class="details">View Details</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="input-content">
+          <span>Phone Number</span>
+          <input type="text" placeholder="Phone" />
         </div>
       </div>
+      <div style="display: flex">
+        <button class="btn">
+          <a href="createProduct.html" style="color: white">Create a new product</a>
+        </button>
+        <button class="btn save-changes-button">Save Changes</button>
+      </div>
     </div>
-    <div class="footer">
-      <footer>
-        <img
-          src="../images/icons/Logo-white.png"
-          width="198px"
-          height="40px"
-          class="logo"
-          id="footer-logo"
-          alt="OrganicFit"
-        />
-        <span class="footer-text">Natural Organics. All rights reserved.</span>
-        <span class="footer-text">2024</span>
-      </footer>
+  </div>
+  <div class="orders-container">
+    <div class="orders-content">
+      <div class="orders-title">
+        <h2>Recent Order History</h2>
+      </div>
+      <div class="orders-table">
+        <table>
+          <thead>
+            <tr>
+              <th>ORDER ID</th>
+              <th>DATE</th>
+              <th>TOTAL</th>
+              <th>STATUS</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#738</td>
+              <td>8 Sep, 2024</td>
+              <td>$135 (5 products)</td>
+              <td>Processing</td>
+              <td class="details">View Details</td>
+            </tr>
+            <tr>
+              <td>#738</td>
+              <td>8 Sep, 2024</td>
+              <td>$135 (5 products)</td>
+              <td>Processing</td>
+              <td class="details">View Details</td>
+            </tr>
+            <tr>
+              <td>#738</td>
+              <td>8 Sep, 2024</td>
+              <td>$135 (5 products)</td>
+              <td>Processing</td>
+              <td class="details">View Details</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-  </body>
+  </div>
+  <div class="footer-container">
+    <img src="../images/icons/Logo-white.png" width="198px" height="40px" class="footer-logo" alt="OrganicFit" />
+    <div class="footer-text-container">
+      <span class="footer-text">Natural Organics. All rights reserved.</span>
+      <span class="footer-text">2024</span>
+    </div>
+  </div>
+</body>
+
 </html>

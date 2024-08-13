@@ -139,20 +139,33 @@ a {
   display: none;
 }
 
-footer {
+.footer-container {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   width: 100%;
-  height: 15%;
   background-color: black;
   color: white;
-  flex-direction: column;
-  position: fixed;
-  bottom: 0;
-  padding-top: 20px ;
+  padding: 1rem 20px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
 
-  img, span {
-    margin-left: 100px;
-  }
+.footer-logo {
+  margin-bottom: 0.5rem;
+  margin-left: 20px;
+}
+
+.footer-text-container {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.footer-text {
+  display: block;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
 }
 
 
@@ -198,8 +211,17 @@ footer {
     text-align: left;
   }
 
-  footer {
-    height: 10%;
+  .footer-container {
+    align-items: center;
+    padding: 1rem 10px; 
+  }
+
+  .footer-logo {
+    margin-bottom: 1rem;
+  }
+
+  .footer-text-container {
+    text-align: center; 
   }
 }
 
@@ -231,8 +253,14 @@ footer {
     padding: 0.5rem 0;
   }
 
-  footer {
-    height: 13%;
+  .footer-container {
+    padding: 0.5rem 5px; 
+    align-items: center;
+  }
+
+  .footer-text {
+    font-size: 0.8rem; 
+    margin: 0.3rem 0;
   }
 }
 
